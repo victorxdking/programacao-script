@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #4a4a4a;
+}
+
+.titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+}
+
+.linha {
+    display: flex;
+    flex: 1;
+}
+
+.casa {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preta {
+    background-color: black;
+}
+
+.branca {
+    background-color: white;
+}
+
+.peca {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.pecaAzul {
+    background-color: #0080ff;
+    border: 2px solid black;
+}
+
+.pecaVerde {
+    background-color: #00e5a8;
+    border: 2px solid black;
+}
+
+.peca:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.preta:hover {
+    background-color: #444;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.branca:hover {
+    background-color: #ddd;
+    transition: background-color 0.2s ease-in-out;
+}
