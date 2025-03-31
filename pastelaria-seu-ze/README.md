@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pastelaria do Seu Zé - Next.js
 
-## Getting Started
+Este projeto exibe uma landing page responsiva com o cardápio da pastelaria fictícia "Pastelaria do Seu Zé", desenvolvida com Next.js.
 
-First, run the development server:
+---
+
+## 🚀 Como Rodar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/victorxdking/programacao-script.git
+cd programacao-script/pastelaria-seu-ze
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📋 Funcionalidades
 
-## Learn More
+- Exibe o cardápio da pastelaria com imagem, nome e preço do pastel.
+- Layout responsivo e com visual alegre.
+- Componentes reutilizáveis (Card de pastel).
+- Design baseado em protótipo de alta fidelidade.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Estilização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Estilo inspirado em lanchonetes e padarias clássicas.
+- Layout em grid com responsividade.
+- Estilo centralizado usando CSS inline direto nos componentes.
+- Tipografia descontraída com "Comic Sans".
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ✨ Diferenciais
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Componentização com React (`PastelCard`).
+- Organização clara da interface com App Router.
+- Pronto para deploy no Vercel ou Netlify.
+
+---
+
+## 📂 Estrutura do Projeto
+
+```
+📦 pastelaria-seu-ze
+├── 📂 app
+│   ├── 📂 components
+│   │   └── 📄 PastelCard.jsx
+│   ├── 📄 layout.js
+│   ├── 📄 page.jsx
+│   └── 📄 globals.css
+├── 📂 public
+│   ├── 🍖 carne.png
+│   └── 🍕 pizza.png
+├── 📂 styles
+│   └── 📄 globals.css
+├── 📜 package.json
+├── 📜 README.md
+```
+
+---
+
+## 📜 Tecnologias Utilizadas
+
+- Next.js
+- React.js
+- JavaScript (ES6+)
+- CSS Inline / App Router
+
+---
+
+## 🔗 Repositório
+
+[GitHub - Programação Script](https://github.com/victorxdking/programacao-script)
+
+---
+
+Feito por Victor Vieira 🥟🚀
