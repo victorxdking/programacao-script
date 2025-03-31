@@ -47,14 +47,6 @@ Acesse [http://localhost:3000](http://localhost:3000) no navegador.
 
 ---
 
-## ✨ Diferenciais
-
-- Componentização com React (`PastelCard`).
-- Organização clara da interface com App Router.
-- Pronto para deploy no Vercel ou Netlify.
-
----
-
 ## 📂 Estrutura do Projeto
 
 ```
