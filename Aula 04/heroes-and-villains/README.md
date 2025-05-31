@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐉 Dragon Ball Battle Game (Next.js)
 
-## Getting Started
+Jogo interativo de luta por turnos com Goku enfrentando diversos vilões icônicos do universo Dragon Ball, como Vegeta, Freeza e Majin Boo. Desenvolvido com [Next.js](https://nextjs.org) e React, o jogo traz sons, imagens e animações para criar uma experiência divertida e dinâmica no navegador.
 
-First, run the development server:
+---
+
+## 📸 Demonstração
+
+![Demonstração do Jogo](./public/demonstracao.png)
+
+---
+
+## 🚀 Como Rodar o Projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repo.git
+cd seu-repo
+````
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Abra [http://localhost:3000](http://localhost:3000) para ver o jogo.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🕹️ Funcionalidades do Jogo
 
-## Learn More
+* Goku inicia com 100% de vida.
+* Enfrenta um inimigo por vez até vencer o torneio.
+* Ações disponíveis:
 
-To learn more about Next.js, take a look at the following resources:
+  * 🥊 Atacar: causa dano físico aleatório.
+  * 💥 Ataque Especial: ataque mais forte com som exclusivo.
+  * 🛡️ Defender: ignora o ataque do próximo turno.
+  * 🌱 Usar Semente: recupera 50% da vida (limitado).
+  * 🏃 Correr: finaliza o jogo fugindo da luta.
+* Sons de ataque e cura personalizados.
+* Mudança automática para o próximo inimigo ao vencer.
+* Exibição do inimigo atual e do próximo.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Estrutura dos Arquivos
 
-## Deploy on Vercel
+```
+app/
+├── page.js               # Página principal com a interface do jogo
+├── layout.js             # Layout global da aplicação
+├── globals.css           # Estilização completa da aplicação
+├── hooks/
+│   └── gameManager.js    # Lógica de turnos, vida, ações e progressão
+├── data/
+│   ├── enemies.js        # Lista de inimigos com nome, id e imagem
+│   └── sounds.js         # Sons organizados por tipo de ação
+public/
+├── *.png                 # Imagens dos personagens e fundo
+├── *.mp3                # Arquivos de som das ações e inimigos
+└── demonstracao.png      # Imagem de preview do jogo
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Tecnologias Usadas
+
+* **Next.js 13+** com app router
+* **React com Hooks** para controle de estado
+* **CSS puro** para animações e responsividade
+* **Audio API** para efeitos sonoros
+* **JavaScript moderno (ES6+)**
+
+---
+
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Victor Vieira**
+Projeto acadêmico para praticar Next.js, lógica de jogos e interações com áudio.
