@@ -15,8 +15,8 @@ Jogo interativo de luta por turnos com Goku enfrentando diversos vilões icônic
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+git clone https://github.com/victorxdking/programacao-script.git
+cd "programacao-script/Aula 04/heroes-and-villains"
 ````
 
 2. Instale as dependências:
